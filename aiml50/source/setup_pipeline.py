@@ -173,7 +173,7 @@ trainStep = EstimatorStep(
 # Once training is complete, register.py registers the model with AML #
 
 # Configuration for registration step #
-registerEnvironment = Environment.from_pip_requirements('registerenv', 'requirements-registration.txt')
+registerEnvironment = Environment.from_pip_requirements('registerenv', 'requirements-registration.txt' )
 registerRunConfig = RunConfiguration()
 registerRunConfig.environment = registerEnvironment
 
